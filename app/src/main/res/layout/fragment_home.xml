@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.ui.home.HomeFragment">
+
+    <include layout="@layout/title_bar"/>
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:padding="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <EditText
+                   android:id="@+id/editSearch"
+                   android:inputType="text"
+                    android:imeOptions="actionSearch"
+                   android:padding="10dp"
+                   android:background="@drawable/search_edit"
+                   android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/search_icon"
+                   android:hint="请输入搜索内容"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <com.youth.banner.Banner
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/homeBanner"
+                   android:layout_width="match_parent"
+                   android:layout_height="180dp"/>
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorB"
+                   android:textSize="18sp"
+                   android:text="推荐服务"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <GridView
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/homeService"
+                   android:gravity="center"
+                   android:numColumns="5"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorB"
+                   android:textSize="18sp"
+                   android:text="专题"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.example.smartcity1.costomView.MyGridView
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:id="@+id/homeZt"
+                   android:numColumns="2"
+                   android:gravity="center"
+                   android:horizontalSpacing="10dp"
+                   android:verticalSpacing="10dp"
+                   android:layout_height="wrap_content"/>
+               <com.google.android.material.tabs.TabLayout
+                   android:id="@+id/homeTab"
+                   app:tabIndicatorColor="@color/colorBg"
+                   app:tabIndicatorFullWidth="false"
+                   app:tabPaddingStart="-5dp"
+                   app:tabPaddingEnd="-5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <com.example.smartcity1.costomView.MyViewPager
+                   android:id="@+id/homeVp"
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+       </ScrollView>
+
+
+
+</LinearLayout>

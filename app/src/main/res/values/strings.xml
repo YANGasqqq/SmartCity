@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartCity1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_all">全部服务</string>
+    <string name="title_cpc">智慧党建</string>
+    <string name="title_news">新闻</string>
+    <string name="title_user">个人中心</string>
+</resources>
